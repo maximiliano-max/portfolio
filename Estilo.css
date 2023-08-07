@@ -415,9 +415,17 @@ footer a {
 /* seccion R E S P O N S I V E */
 /* *********************/
 
-@media screen and (max-width: 800px) {
-    .redes {
+@media screen and (max-width: 750px) {
+   
+    .redes i{ display: inline-flex; 
+        font-size : 35px;
+        margin-top: 20px;
+    }
+     h1 {
         display: none;
+    }
+    .presentacion .descripcion p {
+        font-size: 5px;
     }
     nav {
         display: none;
@@ -428,26 +436,32 @@ footer a {
         background-color: rgba(202, 44, 44, 0.096);
         width: 100%;
         position: absolute;
-        top: 48px;
+        top: 40px;
         left: 0;
-        padding: 10px 0;
+        padding: 0px 0;
     }
     nav.responsive ul {
         display: block !important;
-        text-align: center;
+        text-align: left;
     }
     nav.responsive ul li {
-        margin: 5px 0;
+        margin: 2px 0;
     }
     #icono-nav {
         display: block;
     }
-    #inicio .contenido .presentacion h2 {
-        font-size: 40px;
+  
+
+    .presentacion .bienvenida{
+       padding-top: 10px;
+       padding-bottom: 3px;
     }
+
+   
     /* seccion SOBRE MI */
     #sobremi {
-        padding: 50px 0;
+        
+        padding: 80px 0;
         display: block;
     }
     #sobremi .contenedor-foto {
@@ -461,7 +475,7 @@ footer a {
         text-align: center;
     }
     #sobremi .sobremi h2 {
-        font-size: 25px;
+        font-size: 45px;
         text-align: center;
     }
     /* seccion MIS SERVICIOS */
