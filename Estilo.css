@@ -44,7 +44,7 @@ html {
     margin-left: 15px;
     color: hsl(155, 40%, 33%);
     font-size: 29px;
-    text-align: center;
+  
      
 }
 
@@ -96,6 +96,10 @@ html {
     color: white;
 }
 
+#icono-nav i {
+    display: none;
+}
+
 #inicio .contenido .descripcion{
     margin-top: 20px;
     color: white;
@@ -105,8 +109,9 @@ html {
 }
 
 h2 span{
-    color: hsl(155, 40%, 33%);
-    font-size: 33px;
+    color: brown;
+    font-size: 45px;
+    font-weight: 400;
 }
 
 .redes i{
@@ -427,21 +432,25 @@ footer a {
     .presentacion .descripcion p {
         font-size: 5px;
     }
+
+    #icono-nav i {
+        display: flex;
+    }
     nav {
         display: none;
         
     }
     nav.responsive {
-        display: block;
+        display: flex;
         background-color: rgba(202, 44, 44, 0.096);
         width: 100%;
         position: absolute;
-        top: 40px;
+        top: 35px;
         left: 0;
         padding: 0px 0;
     }
     nav.responsive ul {
-        display: block !important;
+        display: flex !important;
         text-align: left;
     }
     nav.responsive ul li {
