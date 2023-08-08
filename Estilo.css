@@ -11,62 +11,63 @@ html {
     scroll-behavior: smooth;
 }
 
-#inicio{
+#inicio {
     background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 6, 6, 0.6)), url("./img/fondo2.jpg");
     background-size: cover;
-    background-position:center ;
-        height: 100vh;
+    background-position: center;
+    height: 100vh;
 
 }
 
-#inicio .contenido header{
+#inicio .contenido header {
     background-color: rgba(202, 44, 44, 0.096);
     position: absolute;
     width: 100%;
     z-index: 100;
     top: 0;
-    
-}  
+
+}
+
 .contenido-header {
     display: none;
 }
 
-#inicio .contenido header .contenido-header{
+#inicio .contenido header .contenido-header {
     max-width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     padding: 10px 20px;
 }
 
-#inicio .contenido header .contenido-header h1{
+#inicio .contenido header .contenido-header h1 {
     margin-left: 15px;
     color: hsl(155, 40%, 33%);
     font-size: 29px;
-  
-     
+
+
 }
 
-#inicio .contenido header .contenido-header nav ul{
+#inicio .contenido header .contenido-header nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    
-    }
 
-   #inicio .contenido header .contenido-header nav ul li a{
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
     text-decoration: none;
     color: white;
     margin-left: 25px;
-    font-weight:400;
+    font-weight: 400;
     transition: .5s;
-   
+
 }
 
-#inicio .contenido header .contenido-header nav ul a:hover{
+#inicio .contenido header .contenido-header nav ul a:hover {
     color: hsl(155, 40%, 33%);
-    
+
 }
 
 #inicio .contenido .presentacion {
@@ -89,7 +90,7 @@ html {
     margin: 100px;
 }
 
-#inicio .contenido .presentacion h2{
+#inicio .contenido .presentacion h2 {
     font-size: 45px;
     margin-bottom: 25px;
     text-align: center;
@@ -100,7 +101,7 @@ html {
     display: none;
 }
 
-#inicio .contenido .descripcion{
+#inicio .contenido .descripcion {
     margin-top: 20px;
     color: white;
     font-size: 22px;
@@ -108,13 +109,13 @@ html {
     justify-content: space-between;
 }
 
-h2 span{
+h2 span {
     color: brown;
     font-size: 45px;
     font-weight: 400;
 }
 
-.redes i{
+.redes i {
     font-size: 30px;
     text-decoration: none;
     display: inline-block;
@@ -127,6 +128,7 @@ h2 span{
     text-transform: uppercase;
     transition: .5s;
 }
+
 .redes i:hover {
     background-color: hsl(155, 40%, 33%);
 }
@@ -140,10 +142,10 @@ h2 span{
 }
 
 
-img{
+img {
     display: flex;
     padding: 5px;
-    background-color:hsl(155, 40%, 33%);
+    background-color: hsl(155, 40%, 33%);
     position: relative;
     top: 0;
     left: 0;
@@ -152,9 +154,11 @@ img{
     z-index: -1;
     border-radius: 5px;
 }
-#sobremi .sobremi{
+
+#sobremi .sobremi {
     margin: 0 40px;
 }
+
 #sobremi .sobremi .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
@@ -163,29 +167,35 @@ img{
     text-decoration-color: aliceblue;
     text-decoration-thickness: 5px;
 }
+
 #sobremi .sobremi h2 {
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
 }
-#sobremi .sobremi h2 span{
-    color: hsl(155, 40%, 33%);;
+
+#sobremi .sobremi h2 span {
+    color: hsl(155, 40%, 33%);
+    ;
 }
-#sobremi .sobremi h3{
+
+#sobremi .sobremi h3 {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
+
 #sobremi .sobremi p {
     font-size: 14px;
     line-height: 25px;
     color: rgb(37, 37, 37);
     margin-bottom: 12px;
 }
-#sobremi .sobremi a{
+
+#sobremi .sobremi a {
     display: inline-flex;
     text-decoration: none;
     color: hsl(155, 40%, 33%);
@@ -194,12 +204,13 @@ img{
     border: 1px solid #000;
     margin-top: 30px;
     transition: .5s;
-   align-items: center;
+    align-items: center;
 }
-#sobremi .sobremi a:hover{
+
+#sobremi .sobremi a:hover {
     color: brown;
     background-color: hsl(156, 36%, 73%);
-    
+
 }
 
 #servicios {
@@ -333,6 +344,7 @@ img{
     opacity: 1;
     bottom: 0;
 }
+
 /* *********************/
 /* seccion C O N T A C T O */
 /* *********************/
@@ -398,6 +410,7 @@ img{
     background-color: hsl(155, 40%, 33%);
     color: #fff;
 }
+
 /* *********************/
 /* seccion F O O T E R */
 /* *********************/
@@ -416,19 +429,33 @@ footer a {
     margin: 5px;
     font-size: 26px;
 }
+
 /* *********************/
 /* seccion R E S P O N S I V E */
 /* *********************/
 
 @media screen and (max-width: 750px) {
-   
-    .redes i{ display: inline-flex; 
-        font-size : 35px;
+
+    .redes i {
+        display: inline-flex;
+        font-size: 35px;
         margin-top: 20px;
     }
-     h1 {
+
+    #inicio .bienvenida {
+        font-size: 15px;
+        margin-top: -165px;
+    }
+
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 28px;
+    }
+
+    h1 {
         display: none;
     }
+
     .presentacion .descripcion p {
         font-size: 5px;
     }
@@ -436,10 +463,12 @@ footer a {
     #icono-nav i {
         display: flex;
     }
+
     nav {
         display: none;
-        
+
     }
+
     nav.responsive {
         display: block;
         background-color: rgba(202, 44, 44, 0.096);
@@ -448,83 +477,101 @@ footer a {
         top: 35px;
         left: 0;
         padding: 0px 0;
-       
+
     }
+
     nav.responsive ul {
         display: block !important;
         text-align: left;
-        
-        
+
+
     }
+
     nav.responsive ul li {
         margin: 2px 0;
     }
+
     #icono-nav {
         display: block;
     }
-  
 
-    .presentacion .bienvenida{
-       padding-top: 65px;
-       padding-bottom: 3px;
-    }
-    .descripcion  {
-        display: none;
+
+    .presentacion .bienvenida {
+        padding-top: 65px;
+        padding-bottom: 3px;
     }
 
-   
+    .descripcion {
+        display: block;
+    }
+
+
     /* seccion SOBRE MI */
     #sobremi {
-        
+
         padding: 80px 0;
         display: block;
     }
+
     #sobremi .contenedor-foto {
         max-width: 200px;
         margin: auto;
     }
+
     #sobremi .contenedor-foto img {
         padding: 8px;
     }
+
     #sobremi .sobremi .titulo-seccion {
         text-align: center;
     }
+
     #sobremi .sobremi h2 {
         font-size: 45px;
         text-align: center;
     }
+
     /* seccion MIS SERVICIOS */
     #servicios {
         padding: 50px 15px;
     }
+
     #servicios .fila {
         display: block;
     }
+
     #servicios .fila .servicio {
         margin: 10px auto;
     }
+
     /* seccion HABLIDADES MI */
     .contenedor-skills {
         padding: 50px 20px;
     }
+
     /* seccion PORTFOLIO */
     #portfolio {
         padding: 50px 0;
     }
+
     #portfolio .fila {
         display: block;
     }
+
     #portfolio .fila .proyecto {
         margin: 10px auto;
     }
+
     /* seccion CONTACTO */
     #contacto {
         padding: 50px 15px;
     }
+
     #contacto .contenedor-form .mitad {
         margin-bottom: 15px;
         display: block;
     }
+
     #contacto .contenedor-form .mitad input {
         width: 100%;
         margin-bottom: 15px;
