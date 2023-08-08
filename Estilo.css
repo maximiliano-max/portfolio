@@ -430,21 +430,32 @@ footer a {
     font-size: 26px;
 }
 
+
+
+
 /* *********************/
 /* seccion R E S P O N S I V E */
 /* *********************/
 
 @media screen and (max-width: 750px) {
 
+
+    #inicio {
+        background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 6, 6, 0.6)), url("./img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 180vh;
+    
+    }
     .redes i {
         display: inline-flex;
-        font-size: 35px;
+        font-size: 25px;
         margin-top: 20px;
     }
 
     #inicio .bienvenida {
         font-size: 15px;
-        margin-top: -165px;
+        margin-top: 0;
     }
 
 
@@ -456,9 +467,7 @@ footer a {
         display: none;
     }
 
-    .presentacion .descripcion p {
-        font-size: 5px;
-    }
+ 
 
     #icono-nav i {
         display: flex;
@@ -497,12 +506,14 @@ footer a {
 
 
     .presentacion .bienvenida {
-        padding-top: 65px;
+        padding-top: 465px;
         padding-bottom: 3px;
     }
 
-    .descripcion {
-        display: block;
+    #inicio .presentacion .descripcion {
+        display: flex;
+        font-size: 18px;
+              
     }
 
 
