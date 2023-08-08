@@ -441,17 +441,20 @@ footer a {
         
     }
     nav.responsive {
-        display: flex;
+        display: block;
         background-color: rgba(202, 44, 44, 0.096);
         width: 100%;
         position: absolute;
         top: 35px;
         left: 0;
         padding: 0px 0;
+       
     }
     nav.responsive ul {
-        display: flex !important;
+        display: block !important;
         text-align: left;
+        
+        
     }
     nav.responsive ul li {
         margin: 2px 0;
@@ -462,8 +465,11 @@ footer a {
   
 
     .presentacion .bienvenida{
-       padding-top: 10px;
+       padding-top: 65px;
        padding-bottom: 3px;
+    }
+    .descripcion  {
+        display: none;
     }
 
    
