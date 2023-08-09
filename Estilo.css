@@ -572,6 +572,33 @@ footer a {
     #portfolio .fila .proyecto {
         margin: 10px auto;
     }
+    #portfolio .fila .proyecto img {
+       
+        filter: grayscale(1);
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    #portfolio .fila .proyecto:hover img {
+        filter: grayscale(0);
+    }
+    
+    #portfolio .fila .proyecto .info {
+        position: absolute;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: hsl(155, 51%, 53%);
+        
+        
+        opacity: 0;
+        
+        transition: .5s;
+    }
+    
+    #portfolio .fila .proyecto:hover .info {
+        opacity: 1;
+        bottom: 0;
+    }
 
     /* seccion CONTACTO */
     #contacto {
