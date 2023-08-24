@@ -6,7 +6,7 @@ function seleccionar(link) {
     opciones[2].className = "";
     opciones[3].className = "";
     opciones[4].className = "";
-    link.className = "seleccionado";
+    link.className = "";
 
     //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion
     //en modo responsive

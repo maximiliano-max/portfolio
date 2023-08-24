@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "nokora"
-}
+    font-family: "nokora";
+   }
 
 html {
     scroll-behavior: smooth;
@@ -16,13 +16,14 @@ html {
     background-size: cover;
     background-position: center;
     height: 100vh;
-   
+    background-attachment: fixed;
+
 
 }
 
 
 #inicio .contenido header {
-    background-color: rgba(202, 44, 44, 0.096);
+    background-color: rgba(15, 15, 15, 0.096);
     position: absolute;
     width: 100%;
     z-index: 100;
@@ -44,7 +45,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header h1 {
-    margin-left: 15px;
+   
     color: hsl(155, 40%, 33%);
     font-size: 29px;
 
@@ -60,10 +61,11 @@ html {
 
 #inicio .contenido header .contenido-header nav ul li a {
     text-decoration: none;
-    color: white;
+    color: brown;
     margin-left: 25px;
-    font-weight: 400;
+    font-weight: bold;
     transition: .5s;
+    font-size: 25px;
 
 }
 
@@ -116,13 +118,17 @@ h2 span {
     color: hsl(155, 40%, 33%);
     font-size: 45px;
     font-weight: 400;
-   
+
 
 }
+
 @keyframes animacion-span {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.2);
     }
@@ -145,107 +151,47 @@ h2 span {
 .redes i:hover {
     background-color: hsl(155, 40%, 33%);
 }
-
-#sobremi {
-    max-width: 1100px;
-    margin: auto;
-    padding: 100px 15px;
-    color: rgb(36, 36, 35);
-    display: flex;
+#sobremi{
+    min-height:70vh ;
 }
-
-
-img {
-    display: flex;
-    padding: 5px;
-   
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    
-    
-}
-
-.mifoto{
-    display: flex;
-    padding: 5px;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90%;
-    z-index: -1;
-    border-radius: 5%;
-    animation: animacion-degradacion 5s ease-in-out infinite alternate;
-}
-@keyframes animacion-degradacion {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.2;
-    }
-}
-#sobremi .sobremi {
-    margin: 0 40px;
-}
-
-#sobremi .sobremi .titulo-seccion {
+.sobremi .titulo-seccion{
+    text-align: center;
     font-size: 22px;
     text-transform: uppercase;
     color: brown;
     text-decoration: underline;
-    text-decoration-color: aliceblue;
+    text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
+.contenedor-foto .mifoto{
+    border-radius: 15px;
+    max-width: 200px;
+    max-height: 300px;
+    margin-left: 42.5%;
+    }
 
-#sobremi .sobremi h2 {
-    font-size: 34px;
+.sobremi p{
+    font-size: 20px;
+    text-align: center;
     font-weight: bold;
-    margin: 20px 0;
-    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
-
-#sobremi .sobremi h2 span {
-    color: hsl(155, 40%, 33%);
-    ;
-}
-
-#sobremi .sobremi h3 {
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-#sobremi .sobremi p {
-    font-size: 14px;
-    line-height: 25px;
-    color: rgb(37, 37, 37);
-    margin-bottom: 12px;
-}
-
-#sobremi .sobremi a {
-    display: inline-flex;
+.sobremi a{
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 20px;
     text-decoration: none;
-    color: hsl(155, 40%, 33%);
-    border-radius: 30px;
-    padding: 10px;
-    border: 1px solid #000;
-    margin-top: 30px;
-    transition: .5s;
-    align-items: center;
-}
-
-#sobremi .sobremi a:hover {
+    font-family: "nokora";
     color: brown;
-    background-color: hsl(156, 36%, 73%);
-
+    background-color: rgb(101, 145, 145);
+    padding: 10px;
+    margin-left: 43%;
+   
+   
 }
+
+
 
 #servicios {
     padding: 100px 15px;
@@ -257,7 +203,7 @@ img {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: brown;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -317,6 +263,37 @@ img {
     font-size: 14px;
     line-height: 22px;
 }
+.overlay {
+
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transition: all 0.2s ease;
+    transform: translate(-50%, -50%);
+}
+
+.overlay p {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+
 
 #portfolio {
     max-width: 1100px;
@@ -328,7 +305,7 @@ img {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: brown;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -345,7 +322,7 @@ img {
     border: 1px solid #000;
     margin: 0 10px;
     position: relative;
-    overflow: hidden;
+   overflow: hidden;
     cursor: pointer;
 }
 
@@ -479,8 +456,9 @@ footer a {
         background-size: cover;
         background-position: center;
         height: 180vh;
-    
+
     }
+
     .redes i {
         display: inline-flex;
         font-size: 25px;
@@ -501,7 +479,7 @@ footer a {
         display: none;
     }
 
- 
+
 
     #icono-nav i {
         display: flex;
@@ -547,24 +525,22 @@ footer a {
     #inicio .presentacion .descripcion {
         display: flex;
         font-size: 18px;
-              
+
     }
 
 
     /* seccion SOBRE MI */
     #sobremi {
 
-        padding: 80px 0;
+        padding: 20px 0;
         display: block;
     }
 
-    #sobremi .contenedor-foto {
-        max-width: 200px;
-        margin: auto;
-    }
+   
 
     #sobremi .contenedor-foto img {
-        padding: 8px;
+        max-width: 200px;
+        margin: auto;
     }
 
     #sobremi .sobremi .titulo-seccion {
@@ -606,29 +582,30 @@ footer a {
     #portfolio .fila .proyecto {
         margin: 10px auto;
     }
+
     #portfolio .fila .proyecto img {
-       
+
         filter: grayscale(1);
         object-fit: cover;
         transition: .5s;
     }
-    
+
     #portfolio .fila .proyecto:hover img {
         filter: grayscale(0);
     }
-    
+
     #portfolio .fila .proyecto .info {
         position: absolute;
         left: 0px;
         background-color: rgba(0, 0, 0, 0.8);
         color: hsl(155, 51%, 53%);
-        
-        
+
+
         opacity: 0;
-        
+
         transition: .5s;
     }
-    
+
     #portfolio .fila .proyecto:hover .info {
         opacity: 1;
         bottom: 0;
