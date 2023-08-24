@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "nokora";
-   }
+}
 
 html {
     scroll-behavior: smooth;
@@ -22,57 +22,56 @@ html {
 }
 
 
-#inicio .contenido header {
-    background-color: rgba(15, 15, 15, 0.096);
-    position: absolute;
+
+
+
+
+
+header nav {
     width: 100%;
-    z-index: 100;
-    top: 0;
+    max-width: 600px;
+    margin: 10px auto;
+    background: #024959;
 
 }
 
-.contenido-header {
+.menu_bar {
     display: none;
 }
 
-#inicio .contenido header .contenido-header {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-#inicio .contenido header .contenido-header h1 {
-   
-    color: hsl(155, 40%, 33%);
-    font-size: 29px;
-
-
-}
-
-#inicio .contenido header .contenido-header nav ul {
+header nav ul {
+    overflow: hidden;
     list-style: none;
-    display: flex;
-    align-items: center;
-
 }
 
-#inicio .contenido header .contenido-header nav ul li a {
+header nav ul li {
+    float: left;
+    justify-content: center;
+    margin: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
     text-decoration: none;
-    color: brown;
-    margin-left: 25px;
-    font-weight: bold;
-    transition: .5s;
-    font-size: 25px;
+
+
 
 }
 
-#inicio .contenido header .contenido-header nav ul a:hover {
-    color: hsl(155, 40%, 33%);
-
+header nav ul li i {
+    margin-right: 10px;
 }
+
+header nav ul li a:hover {
+    background: #037E8C;
+}
+
+section {
+    padding: 20px;
+}
+
 
 #inicio .contenido .presentacion {
     max-width: 1100px;
@@ -138,7 +137,7 @@ h2 span {
     font-size: 30px;
     text-decoration: none;
     display: inline-block;
-    margin: 25px;
+    margin: 55px;
     padding: 20px 25px;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -151,10 +150,12 @@ h2 span {
 .redes i:hover {
     background-color: hsl(155, 40%, 33%);
 }
-#sobremi{
-    min-height:70vh ;
+
+#sobremi {
+    min-height: 70vh;
 }
-.sobremi .titulo-seccion{
+
+.sobremi .titulo-seccion {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -163,21 +164,23 @@ h2 span {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
-.contenedor-foto .mifoto{
+
+.contenedor-foto .mifoto {
     border-radius: 15px;
     max-width: 200px;
     max-height: 300px;
     margin-left: 42.5%;
-    }
+}
 
-.sobremi p{
+.sobremi p {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 30px;
 }
-.sobremi a{
+
+.sobremi a {
     border-radius: 15px;
     border: 1px solid black;
     font-size: 20px;
@@ -187,8 +190,8 @@ h2 span {
     background-color: rgb(101, 145, 145);
     padding: 10px;
     margin-left: 43%;
-   
-   
+
+
 }
 
 
@@ -223,7 +226,7 @@ h2 span {
     margin: 0 5px;
     border-radius: 5px;
     transition: .5s;
-    cursor: pointer;
+
 }
 
 #servicios .fila .servicio:hover {
@@ -263,6 +266,7 @@ h2 span {
     font-size: 14px;
     line-height: 22px;
 }
+
 .overlay {
 
     opacity: 0;
@@ -273,21 +277,24 @@ h2 span {
     transition: all 0.2s ease;
     transform: translate(-50%, -50%);
 }
- 
-.overlay a{
+
+.overlay a {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 0;
     text-decoration: none;
+    color: #000;
 }
-.overlay p{
+
+.overlay p {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 0;
     border: 2px solid black;
     border-radius: 100px;
     padding: 15px;
-    color:brown;
+    color: rgb(250, 248, 248);
+    background-color: rgb(44, 105, 105);
 }
 
 .proyecto {
@@ -333,7 +340,7 @@ h2 span {
     border: 1px solid #000;
     margin: 0 10px;
     position: relative;
-   overflow: hidden;
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -370,13 +377,21 @@ h2 span {
 /* seccion C O N T A C T O */
 /* *********************/
 
+
 #contacto {
     padding: 100px 15px;
     background-color: #f3f3f3;
 }
 
 #contacto .titulo-seccion {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: brown;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
 }
 
 #contacto .contenedor-form {
@@ -409,15 +424,7 @@ h2 span {
     width: 100%;
 }
 
-#contacto .titulo-seccion {
-    text-align: center;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
-}
+
 
 #contacto .btn-enviar {
     display: block;
@@ -469,10 +476,52 @@ footer a {
 
     }
 
+    header nav {
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+
+    }
+
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    header nav ul li i{
+        color: brown;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background: #024959;
+        color: #fffdfd;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar i {
+        float: right;
+        font-size: 20px;
+        color: rgb(252, 251, 251);
+    }
+
     .redes i {
         display: inline-flex;
         font-size: 25px;
-        margin-top: 20px;
+        margin-top: 150px;
     }
 
     #inicio .bienvenida {
@@ -491,40 +540,16 @@ footer a {
 
 
 
-    #icono-nav i {
-        display: flex;
-    }
+
 
     nav {
         display: none;
 
     }
 
-    nav.responsive {
-        display: block;
-        background-color: rgba(202, 44, 44, 0.096);
-        width: 100%;
-        position: absolute;
-        top: 35px;
-        left: 0;
-        padding: 0px 0;
-
-    }
-
-    nav.responsive ul {
-        display: block !important;
-        text-align: left;
 
 
-    }
 
-    nav.responsive ul li {
-        margin: 2px 0;
-    }
-
-    #icono-nav {
-        display: block;
-    }
 
 
     .presentacion .bienvenida {
@@ -538,6 +563,20 @@ footer a {
 
     }
 
+    .redes i {
+        display: block;
+        margin: 50px;
+        padding: 15px;
+        background-color: rgb(165, 62, 62);
+        
+
+
+    }
+
+    .redes a {
+        text-decoration: none;
+        text-align: center;
+    }
 
     /* seccion SOBRE MI */
     #sobremi {
@@ -546,7 +585,7 @@ footer a {
         display: block;
     }
 
-   
+
 
     #sobremi .contenedor-foto img {
         max-width: 200px;
@@ -594,14 +633,28 @@ footer a {
     }
 
     #portfolio .fila .proyecto img {
-
+        width: 100%;
         filter: grayscale(1);
         object-fit: cover;
         transition: .5s;
+        opacity: 0.3;
+    }
+
+    .overlay {
+
+        opacity: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transition: all 0.2s ease;
+        transform: translate(-50%, -50%);
+        color: #070707;
     }
 
     #portfolio .fila .proyecto:hover img {
         filter: grayscale(0);
+
     }
 
     #portfolio .fila .proyecto .info {
