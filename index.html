@@ -19,14 +19,14 @@
           <h1></h1>
           <nav id="nav" class="responsive">
             <ul id="links">
-              <li><a href="#inicio" onclick="seleccionar(this)">INICIO</a></li>
+              <li><a href="#inicio" class="abierto" onclick="seleccionar(this)">INICIO</a></li>
               <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
               <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
               <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
             </ul>
           </nav>
           <!-- Icono del menu responsive -->
-          <div id="icono-nav" onclick="responsiveMenu()">
+          <div id="icono-nav" class="abierto" onclick="responsiveMenu()">
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
@@ -95,34 +95,31 @@
     <h3 class="titulo-seccion">Mis Proyectos</h3>
     <div class="fila">
       <div class="proyecto">
-        <img src="./img/proyecto.jpg" alt="">
+        <img src="./img/casataisha.jpg" alt="">
         <div class="overlay">
-          <h4>Hostal Casa Taisha</h4>
-          <p>Diseño Web</p>
+         
           <div class="iconos-contenedor1">
-            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><i
-                class="fa-solid fa-arrow-trend-up"></i></a>
+            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"> <h4>Hostal Casa Taisha</h4>
+              <p>Diseño Web</p></a>
           </div>
         </div>
       </div>
       <div class="proyecto">
-        <img src="./img/proyecto.jpg" alt="">
+        <img src="./img/portfolio.jpeg" alt="">
         <div class="overlay">
-          <h4>Hostal Casa Taisha</h4>
-          <p>Diseño Web</p>
           <div class="iconos-contenedor1">
-            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><p>ir</p>></a>
+            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><h4>Portfolio</h4>
+              <p>Diseño Web</p></a>
           </div>
         </div>
       </div>
       <div class="proyecto">
-        <img src="./img/proyecto.jpg" alt="">
+        <img src="./img/ecommerce.jpg" alt="">
         <div class="overlay">
-          <h4>Hostal Casa Taisha</h4>
-          <p>Diseño Web</p>
+          
           <div class="iconos-contenedor1">
-            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><i
-                class="fa-solid fa-arrow-trend-up"></i></a>
+            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><h4>Tienda online</h4>
+              <p>Diseño Web</p></a>
           </div>
         </div>
       </div>
@@ -133,30 +130,28 @@
         <div class="overlay">
           
           <div class="iconos-contenedor1">
-            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><h4>Hostal Casa Taisha</h4>
-              <p>Diseño Web</p></a>
+            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><h4></h4>
+              <p>Proximamente</p></a>
           </div>
         </div>
       </div>
       <div class="proyecto">
         <img src="./img/proyecto.jpg" alt="">
         <div class="overlay">
-          <h4>Hostal Casa Taisha</h4>
-          <p>Diseño Web</p>
+          
           <div class="iconos-contenedor1">
-            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><i
-                class="fa-solid fa-arrow-trend-up"></i></a>
+            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><h4></h4>
+              <p>Proximamente</p></a>
           </div>
         </div>
       </div>
       <div class="proyecto">
         <img src="./img/proyecto.jpg" alt="">
         <div class="overlay">
-          <h4>Hostal Casa Taisha</h4>
-          <p>Diseño Web</p>
+          
           <div class="iconos-contenedor1">
-            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><i
-                class="fa-solid fa-arrow-trend-up"></i></a>
+            <a href="https://glittery-cat-29aa6c.netlify.app" target="_blank" rel="noopener noreferrer"><h4></h4>
+              <p>Proximamente</p></a>
           </div>
         </div>
       </div>
@@ -169,16 +164,16 @@
   <section id="contacto">
     <h3 class="titulo-seccion">Contactame ahora</h3>
     <div class="contenedor-form">
-      <form action="">
+      <form action="formulario.php" method="post">
         <div class="fila mitad">
-          <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-          <input type="email" placeholder="Dirección de Email" class="input-mitad">
+          <input type="text" placeholder="Nombre Completo *" name="Nombre" class="input-mitad">
+          <input type="email" placeholder="Dirección de Email" name="Email" class="input-mitad">
         </div>
         <div class="fila">
           <input type="text" placeholder="Tema..." class="input-full">
         </div>
         <div class="fila">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+          <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
         </div>
 
         <input type="submit" value="Enviar Mensaje" class="btn-enviar">
