@@ -155,23 +155,27 @@ h2 span {
 }
 
 .redes i {
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
    
-    padding: 20px 25px;
+    padding: 10px 10px;
     border: 2px solid #fff;
-    border-radius: 5px;
+   border-radius: 5px;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     transition: .5s;
+    margin: 20px;
 }
 
 .redes i:hover {
     background-color: hsl(155, 40%, 33%);
 }
+.redes a {
+    text-decoration: none;
 
+}
 
 
 
@@ -465,90 +469,43 @@ footer a {
   .link {
     display: none;
   }
-}
-
-#check:checked~.menu {
-  right: 0;
-}
-
-
-    .redes i {
-        display: inline-flex;
-        font-size: 20px;
-        margin-top: 50px;
-    }
-
-    #inicio .bienvenida {
-        font-size: 15px;
-        margin-top: -200px;
-    }
-
-
-    #inicio .contenido .presentacion h2 {
-        font-size: 28px;
-    }
-
   
-
-
-
-
-
-
-
-
-
-
-
-
-    .presentacion .bienvenida {
-        padding-top: 465px;
-        padding-bottom: 3px;
-    }
-
-    #inicio .presentacion .descripcion {
-        display: flex;
-        font-size: 18px;
-
-    }
-
-    .redes i {
-        display: block;
-        margin: 20px;
-        padding: 15px;
-        background-color: rgb(165, 62, 62);
-        
-
-
-    }
-
+#check:checked~.menu {
+    right: 0;
+  }
+  
+  
+      .redes i {
+          display: inline-flex;
+          font-size: 20px;
+          margin-top: 50px;
+      }
+  
+      #inicio .bienvenida {
+          font-size: 15px;
+          margin-top: 20px;
+      }
+  
+  
+      #inicio .contenido .presentacion h2 {
+          font-size: 28px;
+      }
+  
+     .presentacion .bienvenida {
+          padding-top: 65px;
+          padding-bottom: 3px;
+      }
+  
+      #inicio .presentacion .descripcion {
+          display: flex;
+          font-size: 18px;
+  
+      }
+  
     .redes a {
-        text-decoration: none;
-        text-align: center;
-    }
-
-    /* seccion SOBRE MI */
-    #sobremi {
-
-        padding: 20px 0;
-        display: block;
-    }
-
-
-
-    #sobremi .contenedor-foto img {
-        max-width: 200px;
-        margin: auto;
-    }
-
-    #sobremi .sobremi .titulo-seccion {
-        text-align: center;
-    }
-
-    #sobremi .sobremi h2 {
-        font-size: 45px;
-        text-align: center;
-    }
+          text-decoration: none;
+          text-align: center;
+      }
 
     /* seccion MIS SERVICIOS */
     #servicios {
@@ -563,9 +520,7 @@ footer a {
         margin: 10px auto;
     }
 
-  
-
-    /* seccion PORTFOLIO */
+      /* seccion PORTFOLIO */
     #portfolio {
         padding: 50px 0;
     }
@@ -587,7 +542,6 @@ footer a {
     }
 
     .overlay {
-
         opacity: 10;
         position: absolute;
         top: 50%;
@@ -600,7 +554,6 @@ footer a {
 
     #portfolio .fila .proyecto:hover img {
         filter: grayscale(0);
-
     }
 
     #portfolio .fila .proyecto .info {
@@ -608,10 +561,7 @@ footer a {
         left: 0px;
         background-color: rgba(0, 0, 0, 0.8);
         color: hsl(155, 51%, 53%);
-
-
         opacity: 0;
-
         transition: .5s;
     }
 
