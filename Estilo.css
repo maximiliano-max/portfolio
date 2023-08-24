@@ -38,14 +38,15 @@ header {
   
   .menu a {
     display: block;
-    padding: 20px;
+    padding: 10px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 10px ;
     transition: 0.4s;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
+    background-color: hsl(155, 19%, 42%);
   }
   
   .link {
@@ -458,6 +459,7 @@ footer a {
     .mostrar-menu,
   .esconder-menu {
     display: block;
+   
   }
 
   .link {
