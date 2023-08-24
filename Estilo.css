@@ -534,9 +534,7 @@ footer a {
         font-size: 28px;
     }
 
-    h1 {
-        display: none;
-    }
+  
 
 
 
@@ -565,7 +563,7 @@ footer a {
 
     .redes i {
         display: block;
-        margin: 50px;
+        margin: 20px;
         padding: 15px;
         background-color: rgb(165, 62, 62);
         
@@ -614,10 +612,7 @@ footer a {
         margin: 10px auto;
     }
 
-    /* seccion HABLIDADES MI */
-    .contenedor-skills {
-        padding: 50px 20px;
-    }
+  
 
     /* seccion PORTFOLIO */
     #portfolio {
